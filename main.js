@@ -1,4 +1,3 @@
-
 var canvas = new fabric.Canvas("myCanvas");
 
 ball_x = 0;
@@ -42,8 +41,7 @@ function my_keydown(e)
 	console.log(keyPressed);
 	if((ball_x == hole_x)&&(ball_y==hole_y)){
 		canvas.remove(ball_object);
-		document.getElementById("hd3").innerHTML = "You Have Hit The Goal";
-		document.getElementById("myCanvas").style.borderColor="Red";
+		window.location="won.html";
 	}
 		if(keyPressed == '38')
 		{
